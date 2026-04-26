@@ -1,0 +1,20 @@
+[project]
+name = "tiny-reasoning-model"
+version = "0.1.0"
+description = "Tiny reasoning model for math problems"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "antlr4-python3-runtime==4.11.1",
+    "datasets>=4.8.4",
+    "pydantic>=2.13.1",
+    "sympy>=1.14.0",
+    "tensorboard>=2.20.0",
+    "torch==2.10.0",
+    "transformers>=5.5.4",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+]

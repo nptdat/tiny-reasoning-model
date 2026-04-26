@@ -1,0 +1,24 @@
+model_path: Qwen/Qwen2.5-0.5B
+generation_sampling:
+  sampling_method_name: top_p
+  temperature: 1.0
+  top_p: 0.95
+max_new_tokens: 800
+eos_token: 151643
+prompting_mode: base-prompting
+
+num_outputs: 4
+update_reference_every_steps: 20
+batches_per_step: 4
+learning_rate: 5e-6
+clip_grad_norm: 1.0
+clip_epsilon: 10.0
+beta: 0.001
+
+train_max_steps: 1000
+eval_dataset_path: HuggingFaceH4/MATH-500
+eval_max_samples: 10
+eval_every: 10
+checkpoint_every_steps: 50
+output_dir: model/qwen2.5_0.5_base/train_grpo_kl_1000steps
+log_dir: log/qwen2.5_0.5_base/train_grpo_kl_1000steps

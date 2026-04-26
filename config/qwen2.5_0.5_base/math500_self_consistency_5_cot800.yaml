@@ -1,0 +1,16 @@
+model_path: Qwen/Qwen2.5-0.5B
+dataset_path: HuggingFaceH4/MATH-500
+result_path: "result/qwen2.5_0.5_base/math500_self_consistency_5_cot800.json"
+max_new_tokens: 800
+generation_sampling:
+  sampling_method_name: top_p
+  temperature: 1.0
+  top_p: 0.95
+eos_token: 151643
+max_samples: 500
+prompting_mode: cot-prompting
+cot_prompting:
+  template: "{{ problem }} \n Explain step by step. Ensure to put the final result in \\boxed{...}"
+inference_time_scaling: self-consistency
+self_consistency:
+  num_samples: 5

@@ -1,6 +1,11 @@
 # tiny-reasoning-model
 A lightweight implementation of inference-time scaling and training-time scaling methods, designed for experimentation and deeper understanding.
 
+Slide for the talk on this topic
+
+[Reasoning Models in Practice: From Inference-Time to Training-Time Scaling on Verifiable Tasks](https://speakerdeck.com/nptdat/reasoning-models-in-practice-from-inference-time-to-training-time-scaling-on-verifiable-tasks)
+
+
 # Base models
 - Qwen/Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
 

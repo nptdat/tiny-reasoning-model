@@ -1,0 +1,12 @@
+model_path: model/qwen2.5_0.5_base/train_grpo_kl_1000steps/step_400
+dataset_path: HuggingFaceH4/MATH-500
+result_path: "result/qwen2.5_0.5_finetuned/math500_grpo_kl_400steps_cot.json"
+max_new_tokens: 800
+generation_sampling:
+  sampling_method_name: greedy
+eos_token: 151643
+max_samples: 500
+prompting_mode: cot-prompting
+cot_prompting:
+  template: "{{ problem }} \n Explain step by step. Ensure to put the final result in \\boxed{...}"
+

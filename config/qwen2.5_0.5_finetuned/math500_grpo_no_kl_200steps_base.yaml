@@ -1,0 +1,9 @@
+model_path: model/qwen2.5_0.5_base/train_grpo_no_kl_1000steps/step_200
+dataset_path: HuggingFaceH4/MATH-500
+result_path: "result/qwen2.5_0.5_finetuned/math500_grpo_no_kl_200steps_base.json"
+max_new_tokens: 500
+generation_sampling:
+  sampling_method_name: greedy
+eos_token: 151643
+max_samples: 500
+prompting_mode: base-prompting
